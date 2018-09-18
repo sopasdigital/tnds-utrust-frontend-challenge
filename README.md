@@ -1,6 +1,6 @@
 # Weather App
 
-This project is a frontend challenge proposed to us at **The New Digital School** with collaboration with **U-Trust**.
+This project is a frontend challenge proposed to us at **The New Digital School** in collaboration with **U-Trust**.
 
 To view the site, head on over at: [https://sopasdigital.github.io/tnds-utrust-frontend-challenge/](https://sopasdigital.github.io/tnds-utrust-frontend-challenge/)
 
