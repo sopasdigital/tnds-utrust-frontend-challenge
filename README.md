@@ -1,6 +1,6 @@
 # Weather App
 
-This project is a frontend challenge proposed to us at The New Digital School with collaboration with U-Trust.
+This project is a frontend challenge proposed to us at **The New Digital School** with collaboration with **U-Trust**.
 
 This was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
@@ -22,7 +22,7 @@ Builds the app for production to the `build` folder.
 
 ## Project Specs
 
-This project uses **React + Redux** for state management, `axios` for fetching data and a very basic, albeit beginner, implementation of **component-based** design.
+This project uses **React + Redux** for state management, `axios` for fetching data, [openweathermap.org](https://openweathermap.org/forecast5)  for the weather API, and a very basic, albeit beginner, implementation of **component-based** design.
 
 ## Future Builds
 
