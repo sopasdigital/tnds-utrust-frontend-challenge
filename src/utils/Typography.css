@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP|Open+Sans');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Noto Serif JP', sans-serif;
+}
+
+.Entry-Title {
+  font-size: 18px;
+  font-weight: 700;
+}

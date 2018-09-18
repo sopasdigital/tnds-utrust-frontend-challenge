@@ -1,0 +1,50 @@
+.WeatherList {
+  margin: 20px;
+  padding: 0;
+}
+
+.WeatherList-Item:first-child .Entry-Title {
+  color: #4a40e6;
+}
+
+.WeatherList-Item {
+  align-items: center;
+  border-bottom: 1px solid #e8e8e8;
+  border-left: 1px solid #e8e8e8;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.WeatherList-Item:first-child {
+  border-top: 1px solid #e8e8e8;
+}
+
+.WeatherList-Item:last-child {
+  border-right: 0;
+}
+
+.Entry {
+  align-items: center;
+  border-right: 1px solid #e8e8e8;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-width: 80px;
+  padding: 15px 15px 5px;
+}
+
+.Entry:nth-child(2) {
+  border-left: 1px solid #e8e8e8;
+}
+
+.Entry-Label {
+  text-align: center;
+  width: 100%;
+}
+
+.Entry-Title {
+  flex-grow: 1;
+  min-width: 120px;
+  padding: 20px;
+}
+

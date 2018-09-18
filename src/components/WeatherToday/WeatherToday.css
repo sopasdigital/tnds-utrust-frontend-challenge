@@ -1,0 +1,23 @@
+.WeatherToday-Temp {
+  color: #fff;
+  bottom: 2px;
+  font-size: 90px;
+  margin: 0;
+  position: absolute;
+  right: 10px;
+  text-shadow: 5px 3px 0px rgba(74,64,230,1);
+}
+
+.WeatherToday-Title {
+  color: #4a40e6;
+  font-size: 40px;
+  margin: 0;
+}
+
+.WeatherToday-Description {
+  margin: 10px 0 30px;
+}
+
+.WeatherToday-Img {
+  position: relative;
+}
