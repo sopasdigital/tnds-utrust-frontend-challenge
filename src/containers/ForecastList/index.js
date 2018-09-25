@@ -12,7 +12,7 @@ import {
 class ForecastList extends Component {
   renderForecast(cityData) {
     const { name, country } = cityData.city;
-    const { list } = cityData.list;
+    const { list } = cityData;
     const weatherData = list.map(data => {
       const i = list.indexOf(data) + 8;
 
