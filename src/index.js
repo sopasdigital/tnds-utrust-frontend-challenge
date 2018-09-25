@@ -11,7 +11,7 @@ import configureStore from "./store/configureStore";
 
 ReactDOM.render(
   <Store store={configureStore}>
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Provider>
         <Routes />
       </Provider>
