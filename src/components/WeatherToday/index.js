@@ -5,6 +5,7 @@ import Graphic from "../Graphic";
 import { Headline, Heading, Temp } from "../Typography";
 import { Container } from "../../components/UI/Layout";
 
+
 class WeatherToday extends Component {
   render() {
     const fetchedCity = this.props.weather[0];
@@ -20,7 +21,7 @@ class WeatherToday extends Component {
         </Container>
       );
     }
-
+    
     const { temp } = fetchedCity.list[0].main;
     const tempInC = parseFloat((temp - 273.15).toFixed(1));
 
