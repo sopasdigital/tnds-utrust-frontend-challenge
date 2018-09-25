@@ -1,17 +1,13 @@
-import { FETCH_WEATHER } from '../actions';
+import { types } from "../actions";
 
-export default function(state = [], action) {
-  
-  //  destructure action for type and payload
-  const { type, payload } = action;
+export default function(state = [], { type, payload }) {
+  const { FETCH_WEATHER_COMPLETE } = types;
 
-  switch(type) {
-    //  if the action type is FETCH_WEATHER
-    case FETCH_WEATHER:
-    return [ payload.data, ...state ]; 
-    
-      //  else return current 'state'
-      default:
-        return state;
+  switch (type) {
+    case FETCH_WEATHER_COMPLETE:
+      return [payload, ...state];
+
+    default:
+      return state;
   }
 }

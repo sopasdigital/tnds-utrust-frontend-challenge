@@ -1,22 +1,35 @@
-import axios from 'axios';
+import axios from "axios";
 
-//  API and url for OpenWeatherApp
-const API_KEY = 'a2f8768f12720457681774c3af191535';
-const ROOT_URL = `https://api.openweathermap.org/data/2.5/forecast?appid=${API_KEY}`;
+const API_KEY = process.env.REACT_APP_API_KEY;
+const ROOT_URL = process.env.REACT_APP_ROOT_URL;
 
-//  Export FETCH_WEATHER as a
-//  usable const elsewhere
-export const FETCH_WEATHER = 'FETCH_WEATHER';
+export const types = {
+  FETCH_WEATHER_START: "FETCH_WEATHER_START",
+  FETCH_WEATHER_COMPLETE: "FETCH_WEATHER_COMPLETE",
+  FETCH_WEATHER_ERROR: "FETCH_WEATHER_ERROR"
+};
 
-export function fetchWeather(city) {
-
+export const fetchWeather = city => dispatch => {
   //  Request data via axios
-  const url =`${ROOT_URL}&q=${city}`;
-  const request = axios.get(url);
+  const url = `${ROOT_URL}${API_KEY}&q=${city}`;
+  const {
+    FETCH_WEATHER_START,
+    FETCH_WEATHER_COMPLETE,
+    FETCH_WEATHER_ERROR
+  } = types;
 
-  return {
-    type: FETCH_WEATHER,
-    payload: request
-  }
+  dispatch({ type: FETCH_WEATHER_START });
 
-}
+  axios
+    .get(url)
+    .then(response =>
+      dispatch({ type: FETCH_WEATHER_COMPLETE, payload: response.data })
+    )
+    .catch(error =>
+      dispatch({
+        type: FETCH_WEATHER_ERROR,
+        payload: error,
+        error: true
+      })
+    );
+};
