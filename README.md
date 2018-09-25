@@ -2,6 +2,8 @@
 
 This project is a frontend challenge proposed to us at **The New Digital School** in collaboration with **U-Trust**.
 
+To view the site, head on over at: [https://sopasdigital.github.io/tnds-utrust-frontend-challenge/](https://sopasdigital.github.io/tnds-utrust-frontend-challenge/)
+
 This was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 ## Launching the App
