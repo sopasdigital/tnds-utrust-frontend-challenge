@@ -29,13 +29,12 @@ class SearchBar extends Component {
 
     this.props.fetchWeather(this.state.searchTerm);
     this.setState({ searchTerm: "" });
-    console.log(this.state);
   }
 
   render() {
     return (
-      <form onSubmit={this.onFormSubmit}>
-        <SearchBarContainer>
+      <SearchBarContainer>
+        <form onSubmit={this.onFormSubmit}>
           <Icon />
           <SearchInput
             placeholder="Search for a city..."
@@ -49,8 +48,8 @@ class SearchBar extends Component {
               </Text>
             </button>
           </SearchBarButton>
-        </SearchBarContainer>
-      </form>
+        </form>
+      </SearchBarContainer>
     );
   }
 }

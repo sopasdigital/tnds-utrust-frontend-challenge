@@ -9,7 +9,7 @@ export const applyColor = props => {
     case "green":
       return colors.green;
     case "purple":
-      return colors.purple;
+      return colors.purple.default;
     case "white":
       return colors.greyscale.white;
     case "light-grey":

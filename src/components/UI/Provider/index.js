@@ -22,7 +22,7 @@ const defaultStyles = () => injectGlobal`
 
   body {
     background-color: ${colors.greyscale.white};
-    font-family: ${font}, sans-serif;
+    font-family: ${font.primary}, sans-serif;
     font-weight: 400;
     overflow: hidden;
   }

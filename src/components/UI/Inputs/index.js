@@ -15,7 +15,7 @@ const Input = styled.input.attrs({ type: "text" })`
   transition: border-color 100ms ease-in-out;
   vertical-align: middle;
   width: 100%;
-  text-indent: 30px;
+  text-indent: 32px;
   border-radius: 5px;
 
   &::placeholder {
@@ -32,24 +32,41 @@ export const SearchInput = styled(Input)`
 `;
 
 export const SearchBarContainer = styled.div`
-  padding: 30px;
+  padding: 18px;
   display: flex;
   background: ${colors.purple.default};
   border-bottom: 1px solid ${colors.purple.outline};
+  justify-content: center;
+
+  & form {
+    position: relative;
+    width: 60%;
+    display: flex;
+  }
 `;
 
 export const SearchBarButton = styled.span`
-  padding: 12px 18px;
-  border: none;
   background: ${colors.purple.dark};
   color: ${colors.greyscale.white};
   border-radius: 0 8px 8px 0;
   cursor: pointer;
+  transition: background-color 150ms ease-in-out;
+
+  &:hover {
+    background: ${colors.purple.darker};
+  }
+
+  & button {
+    cursor: pointer;
+    padding: 12px 18px;
+    border: none;
+  }
 `;
 
 export const Icon = styled(Search)`
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 12px;
+  left: 16px;
+  z-index: 2;
 `;

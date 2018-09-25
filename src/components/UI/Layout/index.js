@@ -4,12 +4,13 @@ import colors from "../Provider/colors";
 
 export const Layout = styled.div`
   display: grid;
-  grid-template-columns: [full-start] 130px [content-start] auto [content-end] 130px [full-end];
+  grid-template-columns: [full-start] 5% [content-start] auto [content-end] 5% [full-end];
 `;
 
 export const Main = styled.div`
   grid-column-start: content-start;
   grid-column-end: content-end;
+  display: flex;
 `;
 
 export const Header = styled.div`
@@ -22,6 +23,7 @@ export const Container = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-content: flex-start;
+  position: relative;
   width: ${props => (props.width ? props.width : "100%")};
   height: ${props => (props.height ? props.height : "100%")};
 

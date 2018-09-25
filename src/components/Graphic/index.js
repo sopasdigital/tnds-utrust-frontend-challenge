@@ -2,10 +2,8 @@ import React from "react";
 
 const Graphic = () => (
   <svg
-    className="imageGraphic"
-    data-name="Layer 1"
     xmlns="http://www.w3.org/2000/svg"
-    length="auto"
+    height="400px"
     viewBox="0 0 1000 700"
     preserveAspectRatio=""
   >
